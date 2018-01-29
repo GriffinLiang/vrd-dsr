@@ -1,3 +1,3 @@
-# vrd-dsr (Visual Relationship Detection with Deep Structural Ranking)
+# Visual Relationship Detection with Deep Structural Ranking
 
 Coming soon...
