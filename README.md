@@ -10,6 +10,8 @@ The code is written in python and pytorch (0.2.0).
 
 3. Download [the meta data (so_prior.pkl)](https://pan.baidu.com/s/1qZErdmc) and put it in ~/data/vrd
 
+4. Download [visual genome data (vg.zip)](https://pan.baidu.com/s/1qZErdmc) and put it in ~/data/vg
+
 The folder should be:
 
     ├── sg_dataset
