@@ -4,7 +4,7 @@ The code is written in python and pytorch (0.2.0).
 
 ### Data Preparation
 
-1. Download [VRD Dateset](http://cs.stanford.edu/people/ranjaykrishna/vrd/dataset.zip) and put it in the path ~/data
+1. Download [VRD Dateset](http://cs.stanford.edu/people/ranjaykrishna/vrd/dataset.zip) and put it in the path ~/data. Replace ~/data/sg_dataset/sg_test_images/4392556686_44d71ff5a0_o.gif with ~/data/vrd/4392556686_44d71ff5a0_o.jpg
 
 2. Download [VGG16 trained on ImageNet](https://drive.google.com/open?id=0ByuDEGFYmWsbNVF5eExySUtMZmM) and put it in the path ~/data
 
