@@ -88,7 +88,16 @@ def eval_reall_at_N(ds_name, N, res, use_rel = True, use_zero_shot = False):
                 idx = zs[ii] == 1                
                 gt['tuple_label'][ii] = gt['tuple_label'][ii][idx[0]]
                 gt['obj_bboxes'][ii] = gt['obj_bboxes'][ii][idx[0]]
-                gt['sub_bboxes'][ii] = gt['sub_bboxes'][ii][idx[0]]      
+                gt['sub_bboxes'][ii] = gt['sub_bboxes'][ii][idx[0]]
+    else:
+        # Testing all images is quite slow.
+        num_imgs = 8995         
+        if(use_zero_shot):
+            gt_path = '../data/%s/zs_gt.pkl'%ds_name
+        else:
+            gt_path = '../data/%s/gt.pkl'%ds_name
+        with open(gt_path, 'rb') as fid:
+            gt = cPickle.load(fid)
         
     pred = {}
     pred['tuple_label'] = copy.deepcopy(res['rlp_labels_ours'])
@@ -157,7 +166,7 @@ def eval_obj_img(gt_boxes, gt_cls, pred_boxes, pred_cls, gt_thr=0.5, return_flag
         return dets, gts        
     return pos_num, loc_num
 
-def eval_object_recognition_top_N(proposals_path = 'proposal_eccv.pkl'):    
+def eval_object_recognition_top_N(proposals_path):    
     with open('VRD_test.pkl', 'rb') as fid:
         anno = cPickle.load(fid)            
     
