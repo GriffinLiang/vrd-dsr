@@ -38,8 +38,18 @@ The folder should be:
 * tabulate
 * CUDA 8.0 or higher
 
-### Train 
+### Installation 
 
+* Edit ~/lib/make.sh to set CUDA_PATH and choose your `-arch` option to match your GPU.
+
+  | GPU model  | Architecture |
+  | ------------- | ------------- |
+  | TitanX (Maxwell/Pascal) | sm_52 |
+  | GTX 960M | sm_50 |
+  | GTX 1080 (Ti) | sm_61 |
+  | Grid K520 (AWS g2.2xlarge) | sm_30 |
+  | Tesla K80 (AWS p2.xlarge) | sm_37 |
+  
 * Build the Cython modules for the roi_pooling layer and choose the right -arch to compile the cuda code refering to https://github.com/ruotianluo/pytorch-faster-rcnn.
 
     ```bash
@@ -47,7 +57,15 @@ The folder should be:
     ./make.sh
     ```
 
+### Train
+
+* Model Structure
+
+![Model Structure](https://github.com/GriffinLiang/vrd-dsr/blob/master/img/net.png)
+
 * CUDA_VISIBLE_DEVICES=0 python train.py --dataset vrd --name VRD_RANK --epochs 10 --print-freq 500 --model_type RANK_IM
+
+* This project contains all training and testing code for predicate detection. For relationship detection, our proposed pipeline contains two stages. The first stage is object detection and not included in this project. To achieve this, you may refer to some other projects such as [pytorch-faster-rcnn](https://github.com/ruotianluo/pytorch-faster-rcnn) and [faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch).
 
 ## Citation
 
@@ -59,3 +77,7 @@ If you use this code, please cite the following paper(s):
   		booktitle={AAAI Conference on Artificial Intelligence},
   		year={2018}
 	}
+
+## License
+
+The source codes and processed data can only be used for none-commercial purpose. 
