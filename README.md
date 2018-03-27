@@ -1,6 +1,6 @@
 # Visual Relationship Detection with Deep Structural Ranking
 
-The code is written in python and pytorch (0.2.0).
+The code is written in python and pytorch (0.2.0) [torch-0.2.0.post3].
 
 ### Data Preparation
 
