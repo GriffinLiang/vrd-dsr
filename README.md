@@ -29,6 +29,26 @@ The folder should be:
         ├── test.pkl
         ├── train.pkl
         └── zeroShot.mat
+### Data format
+
+* train.pkl or test.pkl
+	* python list
+	* each item is a dictionary with the following keys: {'img_path', 'classes', 'boxes', 'ix1', 'ix2', 'rel_classes'}
+	  * 'classes' and 'boxes' describe the objects contained in a single image.
+	  * 'ix1': subject index.
+	  * 'ix2': object index.
+	  * 'rel_classes': relationship for a subject-object pair.
+
+
+* proposal.pkl
+	```Python
+        >>> proposals.keys()
+        ['confs', 'boxes', 'cls']
+        >>> proposals['confs'].shape, proposals['boxes'].shape, proposals['cls'].shape
+        ((1000,), (1000,), (1000,))
+        >>> proposals['confs'][0].shape, proposals['boxes'][0].shape, proposals['cls'][0].shape
+        ((9, 1), (9, 4), (9, 1))
+        ```
 
 ### Prerequisites
 
