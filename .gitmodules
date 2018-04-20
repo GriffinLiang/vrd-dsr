@@ -1,0 +1,3 @@
+[submodule "faster-rcnn"]
+	path = faster-rcnn
+	url = git@github.com:rbgirshick/py-faster-rcnn.git
