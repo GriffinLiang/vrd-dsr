@@ -76,7 +76,16 @@ The folder should be:
     cd lib
     ./make.sh
     ```
-
+    
+### Demo
+ * Predicate demo: demo.py->pre_demo()
+   * Download [epoch_4_checkpoint.pth.tar](https://pan.baidu.com/s/1POE2LKJulOoHqEkWV-XHig) and put it in ~/model
+ * Relationship demo: demo.py->vrd_demo().
+   * Install [faster-rcnn](https://github.com/GriffinLiang/faster-rcnn.pytorch/tree/773184a60635918e43b320eb1a0e8881779b90c8
+) according to  README file. (Pay attention to ~/lib/make.sh. Set CUDA_PATH by choosing your `-arch` option to match your GPU.)
+   * Download [faster_rcnn_1_20_7559.pth](https://pan.baidu.com/s/1V0QIiEI06tcKQOTcHkaorQ) and put it in ~/model
+   * [Thanks Jianwei Yang and Jiasen Lu for the detector codes!](https://github.com/jwyang/faster-rcnn.pytorch)
+   
 ### Train
 
 * Model Structure
