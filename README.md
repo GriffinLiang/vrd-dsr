@@ -94,7 +94,7 @@ The folder should be:
 
 * CUDA_VISIBLE_DEVICES=0 python train.py --dataset vrd --name VRD_RANK --epochs 10 --print-freq 500 --model_type RANK_IM
 
-  You can set the parser argument -no_so to discard seperate bbox visual input and --no_obj to discard semantic cue.
+  You can set the parser argument -no_so to discard separate bbox visual input and --no_obj to discard semantic cue.
 
 * This project contains all training and testing code for predicate detection. For relationship detection, our proposed pipeline contains two stages. The first stage is object detection and not included in this project. I am trying to release the code ASAP. Before that, you may refer to some other projects such as [pytorch-faster-rcnn](https://github.com/ruotianluo/pytorch-faster-rcnn) and [faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch).
 
