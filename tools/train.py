@@ -106,7 +106,7 @@ if __name__ == '__main__':
         else:
             print "=> no checkpoint found at '{}'".format(args.resume)    
     
-    res_file = '../results/%s.txt'%args.name
+    res_file = '../experiment/results/%s.txt'%args.name
     if not osp.exists('../experiment/results'):
         os.makedirs('../experiment/results')
     save_dir = '../models/%s'%args.name
