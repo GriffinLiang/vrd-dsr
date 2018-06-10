@@ -1,5 +1,5 @@
 ## General
-results/*
+experiment/results/*
 models/exp_models/*
 models/*/*
 tools/*.sh
