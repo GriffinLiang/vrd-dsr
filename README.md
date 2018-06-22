@@ -8,9 +8,9 @@ The code is written in python and pytorch (0.2.0) [torch-0.2.0.post3].
 
 2. Download [VGG16 trained on ImageNet](https://drive.google.com/open?id=0ByuDEGFYmWsbNVF5eExySUtMZmM) and put it in the path ~/data
 
-3. Download the meta data (so_prior.pkl) [Baidu YUN](https://pan.baidu.com/s/1qZErdmc) [Google Drive](https://drive.google.com/open?id=1e1agFQ32QYZim-Vj07NyZieJnQaQ7YKa) and put it in ~/data/vrd
+3. Download the meta data (so_prior.pkl) [[Baidu YUN]](https://pan.baidu.com/s/1qZErdmc) or [[Google Drive]](https://drive.google.com/open?id=1e1agFQ32QYZim-Vj07NyZieJnQaQ7YKa) and put it in ~/data/vrd
 
-4. Download visual genome data (vg.zip) [Baidu YUN](https://pan.baidu.com/s/1qZErdmc) [Google Drive](https://drive.google.com/open?id=1QrxXRE4WBPDVN81bYsecCxrlzDkR2zXZ) and put it in ~/data/vg
+4. Download visual genome data (vg.zip) [[Baidu YUN]](https://pan.baidu.com/s/1qZErdmc) or [[Google Drive]](https://drive.google.com/open?id=1QrxXRE4WBPDVN81bYsecCxrlzDkR2zXZ) and put it in ~/data/vg
 
 The folder should be:
 
