@@ -12,6 +12,8 @@ The code is written in python and pytorch (0.2.0) [torch-0.2.0.post3].
 
 4. Download visual genome data (vg.zip) [[Baidu YUN]](https://pan.baidu.com/s/1qZErdmc) or [[Google Drive]](https://drive.google.com/open?id=1QrxXRE4WBPDVN81bYsecCxrlzDkR2zXZ) and put it in ~/data/vg
 
+5. Word2vec representations of the subject and object categories are provided in this project. If you want to use the model for novel categories, please refer to this [blog](http://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/).
+
 The folder should be:
 
     ├── sg_dataset
