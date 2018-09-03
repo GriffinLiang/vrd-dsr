@@ -2,7 +2,7 @@
 
 The code is written in python and pytorch (0.2.0) [torch-0.2.0.post3].
 
-Clone the repo:
+### Clone the repo
   * `git clone git@github.com:GriffinLiang/vrd-dsr.git`
   * `git submodule update --recursive`
 
