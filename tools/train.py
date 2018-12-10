@@ -74,7 +74,7 @@ if __name__ == '__main__':
     # Initial object embedding with word2vec
     #with open('../data/vrd/params_emb.pkl') as f:
     #    emb_init = cPickle.load(f)
-    #net.state_dict()['emb.weight'][1::].copy_(torch.from_numpy(emb_init))
+    #net.state_dict()['emb.weight'].copy_(torch.from_numpy(emb_init))
     net.cuda()    
     params = list(net.parameters())
     momentum = 0.9
