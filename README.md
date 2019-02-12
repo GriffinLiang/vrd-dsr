@@ -90,7 +90,7 @@ The folder should be:
     
 ### Demo
  * Predicate demo: demo.py->pre_demo()
-   * Download [epoch_4_checkpoint.pth.tar](https://pan.baidu.com/s/1POE2LKJulOoHqEkWV-XHig) and put it in ~/model
+   * Download epoch_4_checkpoint.pth.tar [[Baidu YUN]](https://pan.baidu.com/s/1POE2LKJulOoHqEkWV-XHig) or [[Google Drive]](https://drive.google.com/file/d/1_jWnvWNwlJ2ZqKbDMHsSs4BjTblg0FSe/view?usp=sharing) and put it in ~/model
  * Relationship demo: demo.py->vrd_demo().
    * Install [faster-rcnn](https://github.com/GriffinLiang/faster-rcnn.pytorch/tree/773184a60635918e43b320eb1a0e8881779b90c8
 ) according to  README file. (Pay attention to ~/lib/make.sh. Set CUDA_PATH by choosing your `-arch` option to match your GPU.)
